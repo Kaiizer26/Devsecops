@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RestController
 public class ServiceWeb {
     @GetMapping("/bonjour")
-    public String Bonjour(){
-        return "Bonjour !";
+    public Car Bonjour(){
+        Car car = new Car("AA11BB", "Maserati", 2000);
+        return car;
     }
 }
